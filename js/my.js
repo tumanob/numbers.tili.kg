@@ -58,7 +58,8 @@ $('document').ready(function () {
 	  
 	   var PlaySound = function($param) { 
 	
-		  // $.playSound('assets/'+$param+'.mp3');   
+		  // $.playSound('assets/'+$param+'.mp3'); 
+		    
 	   			playAudio('assets/'+$param+'.mp3');
 	   }; 
 	   
