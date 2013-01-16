@@ -31,10 +31,10 @@ $('document').ready(function () {
       $('#next').click(function(){  
 		  number=number+1;
   			if(number<=10 && number>0){
-			
-			ChangeText(number);
 			ChangeImage(number);
 			PlaySound(number);
+			ChangeText(number);			
+			
 		}
 		else 
 		{
@@ -46,11 +46,9 @@ $('document').ready(function () {
       $('#prev').click(function(){  
 		  number=number-1;
   			if(number<=10 && number>0){
-			
-			ChangeText(number);
 			ChangeImage(number);
 			PlaySound(number);
-			
+			ChangeText(number);	
 		}
 		else
 		{
@@ -58,7 +56,11 @@ $('document').ready(function () {
 		}
   	  });   
 	  
-	   var PlaySound = function($param) { $.playSound('assets/'+$param+'.mp3');   }; 
+	   var PlaySound = function($param) { 
+	
+		  // $.playSound('assets/'+$param+'.mp3');   
+	   			playAudio('assets/'+$param+'.mp3');
+	   }; 
 	   
 	   var ChangeImage = function($param) {   $('#numberimage').attr("src", 'assets/'+$param+'.png');   }; 
 	   
@@ -73,6 +75,13 @@ $('document').ready(function () {
  
  
 
+
+
+
+
+ /* -----------  --------------- */
+
+ 
 
  (function($){
 
