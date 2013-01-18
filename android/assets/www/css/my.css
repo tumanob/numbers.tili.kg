@@ -1,0 +1,17 @@
+/* Put your custom CSS here */
+.ui-block-b h3{
+	margin: 0.3em 0;
+	font-size: 1.7em;
+}
+
+#ennum{
+	color: blueviolet;
+}
+
+#kgnum{
+	color: green;
+}
+
+#runum{
+	color: red;
+}
